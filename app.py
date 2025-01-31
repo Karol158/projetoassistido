@@ -176,7 +176,6 @@ st.write(df_results.head(10))
 rmse_tree = np.sqrt(mean_squared_error(y_test, y_pred_tree))
 st.write(f'RMSE do Modelo de Árvore de Decisão: {rmse_tree:.2f}')
 
-# ... (seu código anterior)
 
 # Modelo de Random Forest
 rf_regressor = RandomForestRegressor()
@@ -209,4 +208,3 @@ fig.update_layout(
 
 # Exibindo o gráfico no Streamlit com ajuste de largura automática
 st.plotly_chart(fig, use_container_width=True)
-
